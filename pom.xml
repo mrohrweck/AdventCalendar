@@ -50,6 +50,7 @@
                     <source>17</source>
                     <target>17</target>
                 </configuration>
+
             </plugin>
             <plugin>
                 <groupId>org.openjfx</groupId>
@@ -70,6 +71,20 @@
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.4.2</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.example.AdventCalendar</mainClass>
+                        </manifest>
+                    </archive>
+                    <finalName>advent-calendar</finalName>
+                </configuration>
             </plugin>
         </plugins>
     </build>
