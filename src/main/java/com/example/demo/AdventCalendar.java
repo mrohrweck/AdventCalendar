@@ -69,7 +69,7 @@ public class AdventCalendar extends Application {
         Image image = new Image(getClass().getResourceAsStream("/images/DayX.jpg"));
         ImageView imageView = new ImageView(image);
         StackPane root = new StackPane(imageView);
-        Scene scene = new Scene(root, 400, 300);
+        Scene scene = new Scene(root, 800, 600);
         stage.setScene(scene);
         stage.setTitle("Day " + day);
         stage.show();
