@@ -49,7 +49,7 @@ jobs:
     - name: Copy JAR to docs directory
       run: |
         mkdir -p docs
-        cp *.jar docs/
+        cp advent-calendar.jar docs/
 
     - name: Commit and push changes
       env:
