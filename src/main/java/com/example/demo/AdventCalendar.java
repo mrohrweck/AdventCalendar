@@ -16,6 +16,7 @@ import javafx.stage.Stage;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Random;
 
 public class AdventCalendar extends Application {
 
@@ -66,10 +67,15 @@ public class AdventCalendar extends Application {
 
     private void showImage(int day) {
         Stage stage = new Stage();
-        Image image = new Image(getClass().getResourceAsStream("/images/DayX.jpg"));
+        Random random = new Random();
+        int rand = random.nextInt(4) + 1;
+        Image image = new Image(getClass().getResourceAsStream("/images/Day" + rand + ".png"));
         ImageView imageView = new ImageView(image);
+        imageView.setFitHeight(500);
+        imageView.setFitWidth(500);
+
         StackPane root = new StackPane(imageView);
-        Scene scene = new Scene(root, 800, 600);
+        Scene scene = new Scene(root, 500, 500);
         stage.setScene(scene);
         stage.setTitle("Day " + day);
         stage.show();
