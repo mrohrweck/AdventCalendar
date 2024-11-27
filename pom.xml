@@ -79,7 +79,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.example.AdventCalendar</mainClass>
+                            <mainClass>com.example.demo.AdventCalendar</mainClass>
                         </manifest>
                     </archive>
                     <finalName>advent-calendar</finalName>
