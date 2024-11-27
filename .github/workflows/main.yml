@@ -1,4 +1,4 @@
-name: Build and Test
+name: Build Generate JAR and deploy
 
 on:
   push:
