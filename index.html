@@ -4,11 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advent Calendar</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4682b4;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4682b4;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #5a9bd4;
+        }
+    </style>
 </head>
 <body>
-    <h1>Advent Calendar</h1>
-    <p>Download the JAR file and run it using the following command:</p>
-    <pre>java -jar advent-calendar.jar</pre>
-    <a href="target/advent-calendar.jar" download>Download JAR</a>
+    <div class="container">
+        <h1>Advent Calendar</h1>
+        <p>Download the JAR file and run it using the following command:</p>
+        <pre>java -jar advent-calendar.jar</pre>
+        <a href="target/advent-calendar.jar" download>Download JAR</a>
+    </div>
 </body>
 </html>
